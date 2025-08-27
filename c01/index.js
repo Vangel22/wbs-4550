@@ -51,6 +51,8 @@ callback(giveMeAnswer, 3);
 //     .finally(() => console.log("Request done!"));
 // }
 
+// Async/await
+
 async function main() {
   try {
     const content = await read("cars.json");
@@ -64,4 +66,6 @@ async function main() {
 
 main();
 
-// Async/await
+// Iskoristete write() za da zapisete 3 avtomobili vo cars.json
+// Zapazete go istiot format
+// Napravete read za da gi vidime novite avtomobili
