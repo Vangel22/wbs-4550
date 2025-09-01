@@ -1,4 +1,4 @@
-const { get, getById, remove } = require("../models/cars");
+const { get, getById, remove, create, update } = require("../models/cars");
 
 const getCars = async (req, res) => {
   try {
@@ -21,6 +21,8 @@ const getSingleCar = async (req, res) => {
 
 const createCar = async (req, res) => {
   try {
+    await create(req.body);
+    return res.status(200).send("Car added successfully!");
   } catch (err) {
     return res.status(500).send("Internal server error!");
   }
@@ -28,6 +30,8 @@ const createCar = async (req, res) => {
 
 const updateCar = async (req, res) => {
   try {
+    await update(req.params.id, req.body);
+    return res.status(200).send("Car updated successfully!");
   } catch (err) {
     return res.status(500).send("Internal server error!");
   }
