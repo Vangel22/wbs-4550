@@ -1,0 +1,19 @@
+{
+    "development": {
+        "port": 3000,
+        "MONGO_USERNAME": "username",
+        "MONGO_PASSWORD": "lozinka",
+        "MONGO_DATABASE": "vasata-databaza",
+        "jwt_secret": "sto_podolga_tolku_pobezbedna"
+    },
+    "staging": {
+        "port": 3000,
+        "MONGO_USERNAME": "test",
+        "MONGO_PASSWORD": "test"
+    },
+    "live" : {
+        "port": 8080,
+        "MONGO_USERNAME": "admin",
+        "MONGO_PASSWORD": "admin"
+    }
+}
