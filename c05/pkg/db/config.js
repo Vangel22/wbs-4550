@@ -1,0 +1,19 @@
+const mongoose = require("mongoose");
+const { getSection } = require("../config");
+// ODM - Object data mapping - Non-relational DB
+// ORM - Object relation mapper -Relational DB
+
+const { MONGO_USERNAME, MONGO_PASSWORD, MONGO_DATABASE } =
+  getSection("development");
+
+const uri = `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@cluster0.12jzasd.mongodb.net/${MONGO_DATABASE}?retryWrites=true&w=majority&appName=Cluster0`;
+async function connect() {
+  try {
+    await mongoose.connect(uri);
+    console.log("MongoDB connected!");
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+module.exports = connect;
