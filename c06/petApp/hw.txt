@@ -1,0 +1,7 @@
+1. Treba da napravite model spored pets.json
+2. Treba da napravite CRUD so multitenancy - handleri
+3. Povrzete gi rutite vo infrastrukturniot kod
+4. Dokolku milenikot ima pole adopted: true, togas e zadolzitelno poleto owner, vo sprotivno treba da bide owner: null,
+
+* Ako napravime nov milenik vo DB, togas vnimavame na cekor 4
+* Ako napravime izmena vo nekoj postoecki, bidejki sega e vdomen milenikot - ke bide zadolzitelno da dodademe owner
