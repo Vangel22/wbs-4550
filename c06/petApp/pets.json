@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "650f0c9a1a2b3c4d5e6f0001",
+    "name": "Bella",
+    "species": "Dog",
+    "age": 3,
+    "adopted": false,
+    "vaccinations": ["Rabies", "Parvovirus"],
+    "owner": null
+  },
+  {
+    "_id": "650f0c9a1a2b3c4d5e6f0002",
+    "name": "Milo",
+    "species": "Cat",
+    "age": 2,
+    "adopted": true,
+    "vaccinations": ["Rabies"],
+    "owner": "650f0c9a1a2b3c4d5e6f9999"
+  },
+  {
+    "_id": "650f0c9a1a2b3c4d5e6f0003",
+    "name": "Thumper",
+    "species": "Rabbit",
+    "age": 1,
+    "adopted": false,
+    "vaccinations": [],
+    "owner": null
+  }
+]

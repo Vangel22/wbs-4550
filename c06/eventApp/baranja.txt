@@ -1,0 +1,8 @@
+- Prv del
+1. Napravete ja schemata za Events
+2. Napravete handleri za events - CRUD
+
+- Vtor del
+3. Ako nastanov nema attendees -> da se vrati soodvetna  poraka 
+4. Napravete handler za dodavanje na attendee vo nizata, attendee moze da dodade samo toj sto go napravil nastanot
+pritoa treba da proverite dali e nadminat maksimalniot broj na ticketsAvailable
