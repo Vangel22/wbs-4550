@@ -5,6 +5,7 @@ const fileUpload = require("express-fileupload");
 require("./pkg/db/config")();
 const { getSection } = require("./pkg/config");
 const { login, register } = require("./handlers/auth");
+const { upload, download } = require("./handlers/storage");
 
 const app = express();
 app.use(express.json());
@@ -24,8 +25,8 @@ app.post("/auth/login", login);
 app.post("/auth/register", register);
 
 // Storage
-// app.post("/api/storage", upload);
-// app.get("/api/storage/:filename", download);
+app.post("/api/storage", upload);
+app.get("/api/storage/:filename", download);
 
 // /uploads
 
