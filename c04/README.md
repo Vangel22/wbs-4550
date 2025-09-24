@@ -46,4 +46,4 @@
 ### NPM
 
 - **Пример за инсталација на библиотеки:**
-  - `npm install express mongoose node-input-validator bcryptjs express-jwt jsonwebtoken`
+  - `npm install express mongoose node-input-validator bcryptjs express-jwt jsonwebtoken express-fileupload`

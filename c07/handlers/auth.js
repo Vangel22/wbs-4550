@@ -40,6 +40,9 @@ const login = async (req, res) => {
     // await logSuccessAttempt(account._id, account.logSuccess + 1);
     // }
     return res.status(200).send({ token });
+
+    //  const loggedUser = decodeToken(token)
+    //  loggedUser.username ...
   } catch (err) {
     console.log(err);
     return res.status(500).send("Invalid Server Error");
